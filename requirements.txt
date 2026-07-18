@@ -5,7 +5,7 @@ tqdm==4.66.1
 prodict==0.8.18
 langchain==0.3.7
 openai==1.54.4
-anthropic==0.39.0
+anthropic==0.117.0
 tiktoken==0.7.0
 easydict==1.11
 wandb==0.18.7
