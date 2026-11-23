@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "rebaseWhen": "conflicted",
+  "timezone": "Asia/Jerusalem",
+  "schedule": ["* 19-23 * * 0-4", "* * * * 5,6"],
+  "updateNotScheduled": false,
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/__fixtures__/**",
+    "tools/**",
+    "admin/demo/**"
+  ],
+  "packageRules": [
+    { "matchPackageNames": ["/^@elastic\\//"], "groupName": "elasticsearch clients" }
+  ],
+  "vulnerabilityAlerts": {
+    "prConcurrentLimit": 2
+  }
+}
